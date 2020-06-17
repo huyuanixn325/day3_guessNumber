@@ -5,7 +5,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Answer {
-    
+
     private List<String> answerNumbers;
 
     public Answer(List<String> answerNumbers) {
@@ -17,10 +17,11 @@ public class Answer {
         int valueIncorrectButPositionCorrectCount = 0;
 
         for (int index = 0; index < userAnswerNumbers.size(); index++) {
+            System.out.println(index);
             if (answerNumbers.get(index).equals(userAnswerNumbers.get(index))) {
-                valueAndPositionCorrectCount ++;
+                valueAndPositionCorrectCount++;
             } else if (answerNumbers.contains(userAnswerNumbers.get(index))) {
-                valueIncorrectButPositionCorrectCount ++;
+                valueIncorrectButPositionCorrectCount++;
             }
         }
         return valueAndPositionCorrectCount + "A" + valueIncorrectButPositionCorrectCount + "B";

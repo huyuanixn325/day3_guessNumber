@@ -1,7 +1,5 @@
 package com.twschool.practice.domain;
 
-import com.twschool.practice.domain.GameStatus;
-
 import java.util.List;
 
 public class GuessNumberGame {
@@ -35,7 +33,7 @@ public class GuessNumberGame {
     }
 
     private void decreaseTryTimes() {
-        leftTryTimes --;
+        leftTryTimes--;
     }
 
     public GameStatus getStatus() {
